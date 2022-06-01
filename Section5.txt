@@ -1,0 +1,549 @@
+n ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (1.4)
+Requirement already satisfied: dill<0.4,>=0.2.2 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (0.3.1.1)
+Requirement already satisfied: pandas<2.0,>=0.17.1; python_version >= "3.7" in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (1.2.4)
+Requirement already satisfied: argcomplete~=1.10 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (1.12.3)
+Requirement already satisfied: httpx in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (0.23.0)
+Requirement already satisfied: cryptography>=0.9.3 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (3.4.7)
+Requirement already satisfied: sqlalchemy<1.4,>=1.3.18 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (1.3.24)
+Requirement already satisfied: importlib-resources~=1.4 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (1.5.0)
+Requirement already satisfied: pyjwt<2 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (1.7.1)
+Requirement already satisfied: unicodecsv>=0.14.1 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (0.14.1)
+Requirement already satisfied: python-slugify<5.0,>=3.0.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (4.0.1)
+Requirement already satisfied: apache-airflow-providers-ftp in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (1.1.0)
+Requirement already satisfied: werkzeug>=1.0.1,~=1.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (1.0.1)
+Requirement already satisfied: python-nvd3~=0.15.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (0.15.0)
+Requirement already satisfied: swagger-ui-bundle>=0.0.2 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (0.0.8)
+Requirement already satisfied: apache-airflow-providers-imap in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (1.0.1)
+Requirement already satisfied: alembic<2.0,>=1.2 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (1.6.2)
+Requirement already satisfied: flask<2.0,>=1.1.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (1.1.2)
+Requirement already satisfied: iso8601>=0.1.12 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (0.1.14)
+Requirement already satisfied: inflection>=0.3.1 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (0.5.1)
+Requirement already satisfied: python3-openid~=3.2 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (3.2.0)
+Requirement already satisfied: sqlalchemy-jsonfield~=1.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (1.0.0)
+Requirement already satisfied: jinja2<2.12.0,>=2.10.1 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (2.11.3)
+Requirement already satisfied: pyyaml>=5.1 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (5.4.1)
+Requirement already satisfied: jsonschema~=3.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (3.2.0)
+Requirement already satisfied: markdown<4.0,>=2.5.2 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (3.3.4)
+Requirement already satisfied: cattrs~=1.1; python_version > "3.6" in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (1.6.0)
+Requirement already satisfied: rich>=9.2.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (9.2.0)
+Requirement already satisfied: attrs<21.0,>=20.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (20.3.0)
+Requirement already satisfied: graphviz>=0.12 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (0.16)
+Requirement already satisfied: python-dateutil<3,>=2.3 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (2.8.1)
+Requirement already satisfied: lazy-object-proxy in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (1.4.3)
+Requirement already satisfied: tenacity~=6.2.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (6.2.0)
+Requirement already satisfied: pendulum~=2.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (2.1.2)
+Requirement already satisfied: croniter<1.1,>=0.3.17 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (1.0.13)
+Requirement already satisfied: itsdangerous<2.0,>=1.1.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (1.1.0)
+Requirement already satisfied: flask-wtf<0.15,>=0.14.3 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (0.14.3)
+Requirement already satisfied: apache-airflow-providers-sqlite in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (1.0.2)
+Requirement already satisfied: flask-login<0.5,>=0.3 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (0.4.1)
+Requirement already satisfied: markupsafe<2.0,>=1.1.1 in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (1.1.1)
+Requirement already satisfied: numpy; python_version >= "3.7" in ./venv/lib/python3.8/site-packages (from apache-airflow[celery]) (1.20.3)
+Collecting apache-airflow-providers-celery; extra == "celery"
+  Downloading apache_airflow_providers_celery-2.1.4-py3-none-any.whl (11 kB)
+Requirement already satisfied: six in ./venv/lib/python3.8/site-packages (from openapi-spec-validator>=0.2.4->apache-airflow[celery]) (1.16.0)
+Requirement already satisfied: openapi-schema-validator in ./venv/lib/python3.8/site-packages (from openapi-spec-validator>=0.2.4->apache-airflow[celery]) (0.1.5)
+Requirement already satisfied: click<8,>=6.7 in ./venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow[celery]) (7.1.2)
+Requirement already satisfied: colorama<1,>=0.3.9 in ./venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow[celery]) (0.4.4)
+Requirement already satisfied: Flask-JWT-Extended<4,>=3.18 in ./venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow[celery]) (3.25.1)
+Requirement already satisfied: marshmallow-sqlalchemy<0.24.0,>=0.22.0 in ./venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow[celery]) (0.23.1)
+Requirement already satisfied: email-validator<2,>=1.0.5 in ./venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow[celery]) (1.1.2)
+Requirement already satisfied: Flask-Babel<2,>=1 in ./venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow[celery]) (1.0.0)
+Requirement already satisfied: apispec[yaml]<4,>=3.3 in ./venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow[celery]) (3.3.2)
+Requirement already satisfied: marshmallow-enum<2,>=1.5.1 in ./venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow[celery]) (1.5.1)
+Requirement already satisfied: Flask-OpenID<2,>=1.2.5 in ./venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow[celery]) (1.2.5)
+Requirement already satisfied: Flask-SQLAlchemy<3,>=2.4 in ./venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow[celery]) (2.5.1)
+Requirement already satisfied: marshmallow<4,>=3 in ./venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow[celery]) (3.12.1)
+Requirement already satisfied: prison<1.0.0,>=0.1.3 in ./venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow[celery]) (0.1.3)
+Requirement already satisfied: sqlalchemy-utils<1,>=0.32.21 in ./venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow[celery]) (0.37.2)
+Requirement already satisfied: zipp>=0.5 in ./venv/lib/python3.8/site-packages (from importlib-metadata~=1.7; python_version < "3.9"->apache-airflow[celery]) (3.4.1)
+Requirement already satisfied: setuptools in ./venv/lib/python3.8/site-packages (from python-daemon>=2.2.4->apache-airflow[celery]) (44.0.0)
+Requirement already satisfied: docutils in ./venv/lib/python3.8/site-packages (from python-daemon>=2.2.4->apache-airflow[celery]) (0.17.1)
+Requirement already satisfied: pytz>=2017.3 in ./venv/lib/python3.8/site-packages (from pandas<2.0,>=0.17.1; python_version >= "3.7"->apache-airflow[celery]) (2021.1)
+Requirement already satisfied: httpcore<0.16.0,>=0.15.0 in ./venv/lib/python3.8/site-packages (from httpx->apache-airflow[celery]) (0.15.0)
+Requirement already satisfied: rfc3986[idna2008]<2,>=1.3 in ./venv/lib/python3.8/site-packages (from httpx->apache-airflow[celery]) (1.5.0)
+Requirement already satisfied: sniffio in ./venv/lib/python3.8/site-packages (from httpx->apache-airflow[celery]) (1.2.0)
+Requirement already satisfied: certifi in ./venv/lib/python3.8/site-packages (from httpx->apache-airflow[celery]) (2020.12.5)
+Requirement already satisfied: cffi>=1.12 in ./venv/lib/python3.8/site-packages (from cryptography>=0.9.3->apache-airflow[celery]) (1.14.5)
+Requirement already satisfied: text-unidecode>=1.3 in ./venv/lib/python3.8/site-packages (from python-slugify<5.0,>=3.0.0->apache-airflow[celery]) (1.3)
+Requirement already satisfied: python-editor>=0.3 in ./venv/lib/python3.8/site-packages (from alembic<2.0,>=1.2->apache-airflow[celery]) (1.0.4)
+Requirement already satisfied: Mako in ./venv/lib/python3.8/site-packages (from alembic<2.0,>=1.2->apache-airflow[celery]) (1.1.4)
+Requirement already satisfied: defusedxml in ./venv/lib/python3.8/site-packages (from python3-openid~=3.2->apache-airflow[celery]) (0.7.1)
+Requirement already satisfied: pyrsistent>=0.14.0 in ./venv/lib/python3.8/site-packages (from jsonschema~=3.0->apache-airflow[celery]) (0.17.3)
+Requirement already satisfied: typing-extensions<4.0.0,>=3.7.4 in ./venv/lib/python3.8/site-packages (from rich>=9.2.0->apache-airflow[celery]) (3.7.4.3)
+Requirement already satisfied: commonmark<0.10.0,>=0.9.0 in ./venv/lib/python3.8/site-packages (from rich>=9.2.0->apache-airflow[celery]) (0.9.1)
+Requirement already satisfied: pytzdata>=2020.1 in ./venv/lib/python3.8/site-packages (from pendulum~=2.0->apache-airflow[celery]) (2020.1)
+Requirement already satisfied: WTForms in ./venv/lib/python3.8/site-packages (from flask-wtf<0.15,>=0.14.3->apache-airflow[celery]) (2.3.3)
+Collecting celery<6,>=5.2.3
+  Downloading celery-5.2.7-py3-none-any.whl (405 kB)
+     |████████████████████████████████| 405 kB 1.2 MB/s 
+Collecting flower>=1.0.0
+  Downloading flower-1.0.0-py2.py3-none-any.whl (457 kB)
+     |████████████████████████████████| 457 kB 22.5 MB/s 
+Requirement already satisfied: isodate in ./venv/lib/python3.8/site-packages (from openapi-schema-validator->openapi-spec-validator>=0.2.4->apache-airflow[celery]) (0.6.0)
+Requirement already satisfied: dnspython>=1.15.0 in ./venv/lib/python3.8/site-packages (from email-validator<2,>=1.0.5->flask-appbuilder~=3.3->apache-airflow[celery]) (1.16.0)
+Requirement already satisfied: idna>=2.0.0 in ./venv/lib/python3.8/site-packages (from email-validator<2,>=1.0.5->flask-appbuilder~=3.3->apache-airflow[celery]) (2.10)
+Requirement already satisfied: Babel>=2.3 in ./venv/lib/python3.8/site-packages (from Flask-Babel<2,>=1->flask-appbuilder~=3.3->apache-airflow[celery]) (2.9.1)
+Requirement already satisfied: h11<0.13,>=0.11 in ./venv/lib/python3.8/site-packages (from httpcore<0.16.0,>=0.15.0->httpx->apache-airflow[celery]) (0.12.0)
+Requirement already satisfied: anyio==3.* in ./venv/lib/python3.8/site-packages (from httpcore<0.16.0,>=0.15.0->httpx->apache-airflow[celery]) (3.6.1)
+Requirement already satisfied: pycparser in ./venv/lib/python3.8/site-packages (from cffi>=1.12->cryptography>=0.9.3->apache-airflow[celery]) (2.20)
+Collecting click-plugins>=1.1.1
+  Downloading click_plugins-1.1.1-py2.py3-none-any.whl (7.5 kB)
+Collecting click-didyoumean>=0.0.3
+  Downloading click_didyoumean-0.3.0-py3-none-any.whl (2.7 kB)
+Collecting kombu<6.0,>=5.2.3
+  Downloading kombu-5.2.4-py3-none-any.whl (189 kB)
+     |████████████████████████████████| 189 kB 26.5 MB/s 
+Collecting click-repl>=0.2.0
+  Downloading click_repl-0.2.0-py3-none-any.whl (5.2 kB)
+Collecting vine<6.0,>=5.0.0
+  Downloading vine-5.0.0-py2.py3-none-any.whl (9.4 kB)
+Collecting billiard<4.0,>=3.6.4.0
+  Downloading billiard-3.6.4.0-py3-none-any.whl (89 kB)
+     |████████████████████████████████| 89 kB 11.2 MB/s 
+Collecting humanize
+  Downloading humanize-4.1.0-py3-none-any.whl (101 kB)
+     |████████████████████████████████| 101 kB 17.3 MB/s 
+Collecting tornado<7.0.0,>=5.0.0
+  Using cached tornado-6.1-cp38-cp38-manylinux2010_x86_64.whl (427 kB)
+Collecting prometheus-client>=0.8.0
+  Using cached prometheus_client-0.14.1-py3-none-any.whl (59 kB)
+Collecting amqp<6.0.0,>=5.0.9
+  Downloading amqp-5.1.1-py3-none-any.whl (50 kB)
+     |████████████████████████████████| 50 kB 8.8 MB/s 
+Collecting prompt-toolkit
+  Using cached prompt_toolkit-3.0.29-py3-none-any.whl (381 kB)
+Collecting wcwidth
+  Using cached wcwidth-0.2.5-py2.py3-none-any.whl (30 kB)
+ERROR: celery 5.2.7 has requirement click<9.0,>=8.0.3, but you'll have click 7.1.2 which is incompatible.
+ERROR: celery 5.2.7 has requirement pytz>=2021.3, but you'll have pytz 2021.1 which is incompatible.
+ERROR: apache-airflow-providers-celery 2.1.4 has requirement apache-airflow>=2.2.0, but you'll have apache-airflow 2.1.0 which is incompatible.
+Installing collected packages: click-plugins, click-didyoumean, vine, amqp, kombu, wcwidth, prompt-toolkit, click-repl, billiard, celery, humanize, tornado, prometheus-client, flower, apache-airflow-providers-celery
+Successfully installed amqp-5.1.1 apache-airflow-providers-celery-2.1.4 billiard-3.6.4.0 celery-5.2.7 click-didyoumean-0.3.0 click-plugins-1.1.1 click-repl-0.2.0 flower-1.0.0 humanize-4.1.0 kombu-5.2.4 prometheus-client-0.14.1 prompt-toolkit-3.0.29 tornado-6.1 vine-5.0.0 wcwidth-0.2.5
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ sudo apt install redis-server
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  chromium-codecs-ffmpeg-extra gstreamer1.0-vaapi libatomic1:i386 libbsd0:i386 libdrm-amdgpu1:i386 libdrm-intel1:i386
+  libdrm-nouveau2:i386 libdrm-radeon1:i386 libdrm2:i386 libedit2:i386 libelf1:i386 libexpat1:i386 libffi7:i386
+  libfwupdplugin1 libgl1:i386 libgl1-mesa-dri:i386 libgl1-mesa-glx:i386 libglapi-mesa:i386 libglvnd0:i386
+  libglx-mesa0:i386 libglx0:i386 libgstreamer-plugins-bad1.0-0 libhtml-template-perl libllvm12:i386
+  libpciaccess0:i386 libsensors5:i386 libstdc++6:i386 libva-wayland2 libvulkan1:i386 libwayland-client0:i386
+  libx11-6:i386 libx11-xcb1:i386 libxau6:i386 libxcb-dri2-0:i386 libxcb-dri3-0:i386 libxcb-glx0:i386
+  libxcb-present0:i386 libxcb-randr0:i386 libxcb-shm0:i386 libxcb-sync1:i386 libxcb-xfixes0:i386 libxcb1:i386
+  libxdmcp6:i386 libxext6:i386 libxfixes3:i386 libxinerama1:i386 libxshmfence1:i386 libxss1:i386 libxxf86vm1:i386
+  mesa-vulkan-drivers:i386
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libhiredis0.14 libjemalloc2 liblua5.1-0 lua-bitop lua-cjson redis-tools
+Suggested packages:
+  ruby-redis
+The following NEW packages will be installed:
+  libhiredis0.14 libjemalloc2 liblua5.1-0 lua-bitop lua-cjson redis-server redis-tools
+0 upgraded, 7 newly installed, 0 to remove and 26 not upgraded.
+Need to get 915 kB of archives.
+After this operation, 4,077 kB of additional disk space will be used.
+Do you want to continue? [Y/n] 
+Get:1 http://in.archive.ubuntu.com/ubuntu focal/universe amd64 libhiredis0.14 amd64 0.14.0-6 [30.2 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu focal/universe amd64 libjemalloc2 amd64 5.2.1-1ubuntu1 [235 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu focal/universe amd64 liblua5.1-0 amd64 5.1.5-8.1build4 [99.9 kB]
+Get:4 http://in.archive.ubuntu.com/ubuntu focal/universe amd64 lua-bitop amd64 1.0.2-5 [6,680 B]
+Get:5 http://in.archive.ubuntu.com/ubuntu focal/universe amd64 lua-cjson amd64 2.1.0+dfsg-2.1 [17.4 kB]
+Get:6 http://in.archive.ubuntu.com/ubuntu focal-updates/universe amd64 redis-tools amd64 5:5.0.7-2ubuntu0.1 [489 kB]
+Get:7 http://in.archive.ubuntu.com/ubuntu focal-updates/universe amd64 redis-server amd64 5:5.0.7-2ubuntu0.1 [37.4 kB]
+Fetched 915 kB in 2s (544 kB/s)         
+Selecting previously unselected package libhiredis0.14:amd64.
+(Reading database ... 242004 files and directories currently installed.)
+Preparing to unpack .../0-libhiredis0.14_0.14.0-6_amd64.deb ...
+Unpacking libhiredis0.14:amd64 (0.14.0-6) ...
+Selecting previously unselected package libjemalloc2:amd64.
+Preparing to unpack .../1-libjemalloc2_5.2.1-1ubuntu1_amd64.deb ...
+Unpacking libjemalloc2:amd64 (5.2.1-1ubuntu1) ...
+Selecting previously unselected package liblua5.1-0:amd64.
+Preparing to unpack .../2-liblua5.1-0_5.1.5-8.1build4_amd64.deb ...
+Unpacking liblua5.1-0:amd64 (5.1.5-8.1build4) ...
+Selecting previously unselected package lua-bitop:amd64.
+Preparing to unpack .../3-lua-bitop_1.0.2-5_amd64.deb ...
+Unpacking lua-bitop:amd64 (1.0.2-5) ...
+Selecting previously unselected package lua-cjson:amd64.
+Preparing to unpack .../4-lua-cjson_2.1.0+dfsg-2.1_amd64.deb ...
+Unpacking lua-cjson:amd64 (2.1.0+dfsg-2.1) ...
+Selecting previously unselected package redis-tools.
+Preparing to unpack .../5-redis-tools_5%3a5.0.7-2ubuntu0.1_amd64.deb ...
+Unpacking redis-tools (5:5.0.7-2ubuntu0.1) ...
+Selecting previously unselected package redis-server.
+Preparing to unpack .../6-redis-server_5%3a5.0.7-2ubuntu0.1_amd64.deb ...
+Unpacking redis-server (5:5.0.7-2ubuntu0.1) ...
+Setting up libjemalloc2:amd64 (5.2.1-1ubuntu1) ...
+Setting up lua-cjson:amd64 (2.1.0+dfsg-2.1) ...
+Setting up lua-bitop:amd64 (1.0.2-5) ...
+Setting up liblua5.1-0:amd64 (5.1.5-8.1build4) ...
+Setting up libhiredis0.14:amd64 (0.14.0-6) ...
+Setting up redis-tools (5:5.0.7-2ubuntu0.1) ...
+Setting up redis-server (5:5.0.7-2ubuntu0.1) ...
+Created symlink /etc/systemd/system/redis.service → /lib/systemd/system/redis-server.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/redis-server.service → /lib/systemd/system/redis-server.service.
+Processing triggers for systemd (245.4-4ubuntu3.17) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.9) ...
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ sudo nano /etc/redis/redis.conf
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ sudo systemctl restart redis.service
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ sudo systemctl status redis.service
+● redis-server.service - Advanced key-value store
+     Loaded: loaded (/lib/systemd/system/redis-server.service; enabled; vendor preset: enabled)
+     Active: active (running) since Wed 2022-06-01 19:14:45 IST; 8s ago
+       Docs: http://redis.io/documentation,
+             man:redis-server(1)
+    Process: 490980 ExecStart=/usr/bin/redis-server /etc/redis/redis.conf (code=exited, status=0/SUCCESS)
+   Main PID: 490981 (redis-server)
+      Tasks: 4 (limit: 9215)
+     Memory: 1.9M
+     CGroup: /system.slice/redis-server.service
+             └─490981 /usr/bin/redis-server 127.0.0.1:6379
+
+Jun 01 19:14:45 nilesh systemd[1]: Starting Advanced key-value store...
+Jun 01 19:14:45 nilesh systemd[1]: redis-server.service: Can't open PID file /run/redis/redis-server.pid (yet?) after >
+Jun 01 19:14:45 nilesh systemd[1]: Started Advanced key-value store.
+...skipping...
+● redis-server.service - Advanced key-value store
+     Loaded: loaded (/lib/systemd/system/redis-server.service; enabled; vendor preset: enabled)
+     Active: active (running) since Wed 2022-06-01 19:14:45 IST; 8s ago
+       Docs: http://redis.io/documentation,
+             man:redis-server(1)
+    Process: 490980 ExecStart=/usr/bin/redis-server /etc/redis/redis.conf (code=exited, status=0/SUCCESS)
+   Main PID: 490981 (redis-server)
+      Tasks: 4 (limit: 9215)
+     Memory: 1.9M
+     CGroup: /system.slice/redis-server.service
+             └─490981 /usr/bin/redis-server 127.0.0.1:6379
+
+Jun 01 19:14:45 nilesh systemd[1]: Starting Advanced key-value store...
+Jun 01 19:14:45 nilesh systemd[1]: redis-server.service: Can't open PID file /run/redis/redis-server.pid (yet?) after >
+Jun 01 19:14:45 nilesh systemd[1]: Started Advanced key-value store.
+~
+~
+~
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ pip install 'apache-airflow[redis]'
+Requirement already satisfied: apache-airflow[redis] in ./venv/lib/python3.8/site-packages (2.1.0)
+Requirement already satisfied: cryptography>=0.9.3 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (3.4.7)
+Requirement already satisfied: markdown<4.0,>=2.5.2 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (3.3.4)
+Requirement already satisfied: apache-airflow-providers-imap in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (1.0.1)
+Requirement already satisfied: pyyaml>=5.1 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (5.4.1)
+Requirement already satisfied: sqlalchemy-jsonfield~=1.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (1.0.0)
+Requirement already satisfied: blinker in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (1.4)
+Requirement already satisfied: inflection>=0.3.1 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (0.5.1)
+Requirement already satisfied: setproctitle<2,>=1.1.8 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (1.2.2)
+Requirement already satisfied: tenacity~=6.2.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (6.2.0)
+Requirement already satisfied: apache-airflow-providers-sqlite in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (1.0.2)
+Requirement already satisfied: flask-caching<2.0.0,>=1.5.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (1.10.1)
+Requirement already satisfied: clickclick>=1.2 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (20.10.2)
+Requirement already satisfied: tabulate<0.9,>=0.7.5 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (0.8.9)
+Requirement already satisfied: importlib-resources~=1.4 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (1.5.0)
+Requirement already satisfied: colorlog>=4.0.2 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (5.0.1)
+Requirement already satisfied: unicodecsv>=0.14.1 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (0.14.1)
+Requirement already satisfied: lazy-object-proxy in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (1.4.3)
+Requirement already satisfied: itsdangerous<2.0,>=1.1.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (1.1.0)
+Requirement already satisfied: python-slugify<5.0,>=3.0.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (4.0.1)
+Requirement already satisfied: flask-appbuilder~=3.3 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (3.3.0)
+Requirement already satisfied: graphviz>=0.12 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (0.16)
+Requirement already satisfied: attrs<21.0,>=20.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (20.3.0)
+Requirement already satisfied: jsonschema~=3.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (3.2.0)
+Requirement already satisfied: markupsafe<2.0,>=1.1.1 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (1.1.1)
+Requirement already satisfied: pygments<3.0,>=2.0.1 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (2.9.0)
+Requirement already satisfied: iso8601>=0.1.12 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (0.1.14)
+Requirement already satisfied: argcomplete~=1.10 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (1.12.3)
+Requirement already satisfied: openapi-spec-validator>=0.2.4 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (0.3.0)
+Requirement already satisfied: flask-login<0.5,>=0.3 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (0.4.1)
+Requirement already satisfied: croniter<1.1,>=0.3.17 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (1.0.13)
+Requirement already satisfied: flask-wtf<0.15,>=0.14.3 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (0.14.3)
+Requirement already satisfied: python-dateutil<3,>=2.3 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (2.8.1)
+Requirement already satisfied: jinja2<2.12.0,>=2.10.1 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (2.11.3)
+Requirement already satisfied: httpx in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (0.23.0)
+Requirement already satisfied: python-nvd3~=0.15.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (0.15.0)
+Requirement already satisfied: sqlalchemy<1.4,>=1.3.18 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (1.3.24)
+Requirement already satisfied: cattrs~=1.1; python_version > "3.6" in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (1.6.0)
+Requirement already satisfied: werkzeug>=1.0.1,~=1.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (1.0.1)
+Requirement already satisfied: importlib-metadata~=1.7; python_version < "3.9" in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (1.7.0)
+Requirement already satisfied: swagger-ui-bundle>=0.0.2 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (0.0.8)
+Requirement already satisfied: pendulum~=2.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (2.1.2)
+Requirement already satisfied: alembic<2.0,>=1.2 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (1.6.2)
+Requirement already satisfied: pyjwt<2 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (1.7.1)
+Requirement already satisfied: dill<0.4,>=0.2.2 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (0.3.1.1)
+Requirement already satisfied: apache-airflow-providers-ftp in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (1.1.0)
+Requirement already satisfied: numpy; python_version >= "3.7" in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (1.20.3)
+Requirement already satisfied: rich>=9.2.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (9.2.0)
+Requirement already satisfied: lockfile>=0.12.2 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (0.12.2)
+Requirement already satisfied: psutil<6.0.0,>=4.2.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (5.8.0)
+Requirement already satisfied: python-daemon>=2.2.4 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (2.3.0)
+Requirement already satisfied: marshmallow-oneofschema>=2.0.1 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (2.1.0)
+Requirement already satisfied: gunicorn>=19.5.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (20.1.0)
+Requirement already satisfied: python3-openid~=3.2 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (3.2.0)
+Requirement already satisfied: flask<2.0,>=1.1.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (1.1.2)
+Requirement already satisfied: termcolor>=1.1.0 in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (1.1.0)
+Requirement already satisfied: pandas<2.0,>=0.17.1; python_version >= "3.7" in ./venv/lib/python3.8/site-packages (from apache-airflow[redis]) (1.2.4)
+Collecting apache-airflow-providers-redis; extra == "redis"
+  Downloading apache_airflow_providers_redis-2.0.4-py3-none-any.whl (16 kB)
+Requirement already satisfied: cffi>=1.12 in ./venv/lib/python3.8/site-packages (from cryptography>=0.9.3->apache-airflow[redis]) (1.14.5)
+Requirement already satisfied: six>=1.9.0 in ./venv/lib/python3.8/site-packages (from tenacity~=6.2.0->apache-airflow[redis]) (1.16.0)
+Requirement already satisfied: click>=4.0 in ./venv/lib/python3.8/site-packages (from clickclick>=1.2->apache-airflow[redis]) (7.1.2)
+Requirement already satisfied: text-unidecode>=1.3 in ./venv/lib/python3.8/site-packages (from python-slugify<5.0,>=3.0.0->apache-airflow[redis]) (1.3)
+Requirement already satisfied: Flask-JWT-Extended<4,>=3.18 in ./venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow[redis]) (3.25.1)
+Requirement already satisfied: sqlalchemy-utils<1,>=0.32.21 in ./venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow[redis]) (0.37.2)
+Requirement already satisfied: marshmallow-sqlalchemy<0.24.0,>=0.22.0 in ./venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow[redis]) (0.23.1)
+Requirement already satisfied: Flask-OpenID<2,>=1.2.5 in ./venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow[redis]) (1.2.5)
+Requirement already satisfied: Flask-SQLAlchemy<3,>=2.4 in ./venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow[redis]) (2.5.1)
+Requirement already satisfied: prison<1.0.0,>=0.1.3 in ./venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow[redis]) (0.1.3)
+Requirement already satisfied: email-validator<2,>=1.0.5 in ./venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow[redis]) (1.1.2)
+Requirement already satisfied: apispec[yaml]<4,>=3.3 in ./venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow[redis]) (3.3.2)
+Requirement already satisfied: Flask-Babel<2,>=1 in ./venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow[redis]) (1.0.0)
+Requirement already satisfied: colorama<1,>=0.3.9 in ./venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow[redis]) (0.4.4)
+Requirement already satisfied: marshmallow<4,>=3 in ./venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow[redis]) (3.12.1)
+Requirement already satisfied: marshmallow-enum<2,>=1.5.1 in ./venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow[redis]) (1.5.1)
+Requirement already satisfied: setuptools in ./venv/lib/python3.8/site-packages (from jsonschema~=3.0->apache-airflow[redis]) (44.0.0)
+Requirement already satisfied: pyrsistent>=0.14.0 in ./venv/lib/python3.8/site-packages (from jsonschema~=3.0->apache-airflow[redis]) (0.17.3)
+Requirement already satisfied: openapi-schema-validator in ./venv/lib/python3.8/site-packages (from openapi-spec-validator>=0.2.4->apache-airflow[redis]) (0.1.5)
+Requirement already satisfied: WTForms in ./venv/lib/python3.8/site-packages (from flask-wtf<0.15,>=0.14.3->apache-airflow[redis]) (2.3.3)
+Requirement already satisfied: certifi in ./venv/lib/python3.8/site-packages (from httpx->apache-airflow[redis]) (2020.12.5)
+Requirement already satisfied: httpcore<0.16.0,>=0.15.0 in ./venv/lib/python3.8/site-packages (from httpx->apache-airflow[redis]) (0.15.0)
+Requirement already satisfied: rfc3986[idna2008]<2,>=1.3 in ./venv/lib/python3.8/site-packages (from httpx->apache-airflow[redis]) (1.5.0)
+Requirement already satisfied: sniffio in ./venv/lib/python3.8/site-packages (from httpx->apache-airflow[redis]) (1.2.0)
+Requirement already satisfied: zipp>=0.5 in ./venv/lib/python3.8/site-packages (from importlib-metadata~=1.7; python_version < "3.9"->apache-airflow[redis]) (3.4.1)
+Requirement already satisfied: pytzdata>=2020.1 in ./venv/lib/python3.8/site-packages (from pendulum~=2.0->apache-airflow[redis]) (2020.1)
+Requirement already satisfied: Mako in ./venv/lib/python3.8/site-packages (from alembic<2.0,>=1.2->apache-airflow[redis]) (1.1.4)
+Requirement already satisfied: python-editor>=0.3 in ./venv/lib/python3.8/site-packages (from alembic<2.0,>=1.2->apache-airflow[redis]) (1.0.4)
+Requirement already satisfied: typing-extensions<4.0.0,>=3.7.4 in ./venv/lib/python3.8/site-packages (from rich>=9.2.0->apache-airflow[redis]) (3.7.4.3)
+Requirement already satisfied: commonmark<0.10.0,>=0.9.0 in ./venv/lib/python3.8/site-packages (from rich>=9.2.0->apache-airflow[redis]) (0.9.1)
+Requirement already satisfied: docutils in ./venv/lib/python3.8/site-packages (from python-daemon>=2.2.4->apache-airflow[redis]) (0.17.1)
+Requirement already satisfied: defusedxml in ./venv/lib/python3.8/site-packages (from python3-openid~=3.2->apache-airflow[redis]) (0.7.1)
+Requirement already satisfied: pytz>=2017.3 in ./venv/lib/python3.8/site-packages (from pandas<2.0,>=0.17.1; python_version >= "3.7"->apache-airflow[redis]) (2021.1)
+Collecting redis~=3.2
+  Downloading redis-3.5.3-py2.py3-none-any.whl (72 kB)
+     |████████████████████████████████| 72 kB 488 kB/s 
+Requirement already satisfied: pycparser in ./venv/lib/python3.8/site-packages (from cffi>=1.12->cryptography>=0.9.3->apache-airflow[redis]) (2.20)
+Requirement already satisfied: dnspython>=1.15.0 in ./venv/lib/python3.8/site-packages (from email-validator<2,>=1.0.5->flask-appbuilder~=3.3->apache-airflow[redis]) (1.16.0)
+Requirement already satisfied: idna>=2.0.0 in ./venv/lib/python3.8/site-packages (from email-validator<2,>=1.0.5->flask-appbuilder~=3.3->apache-airflow[redis]) (2.10)
+Requirement already satisfied: Babel>=2.3 in ./venv/lib/python3.8/site-packages (from Flask-Babel<2,>=1->flask-appbuilder~=3.3->apache-airflow[redis]) (2.9.1)
+Requirement already satisfied: isodate in ./venv/lib/python3.8/site-packages (from openapi-schema-validator->openapi-spec-validator>=0.2.4->apache-airflow[redis]) (0.6.0)
+Requirement already satisfied: h11<0.13,>=0.11 in ./venv/lib/python3.8/site-packages (from httpcore<0.16.0,>=0.15.0->httpx->apache-airflow[redis]) (0.12.0)
+Requirement already satisfied: anyio==3.* in ./venv/lib/python3.8/site-packages (from httpcore<0.16.0,>=0.15.0->httpx->apache-airflow[redis]) (3.6.1)
+Installing collected packages: redis, apache-airflow-providers-redis
+Successfully installed apache-airflow-providers-redis-2.0.4 redis-3.5.3
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ 
+
+(venv) nilesh@nilesh:~/Desktop$ cd ..
+(venv) nilesh@nilesh:~$ airflow celery flower
+Traceback (most recent call last):
+  File "/home/nilesh/Desktop/Apache-Airflow/venv/bin/airflow", line 8, in <module>
+    sys.exit(main())
+  File "/home/nilesh/Desktop/Apache-Airflow/venv/lib/python3.8/site-packages/airflow/__main__.py", line 40, in main
+    args.func(args)
+  File "/home/nilesh/Desktop/Apache-Airflow/venv/lib/python3.8/site-packages/airflow/cli/cli_parser.py", line 47, in command
+    func = import_string(import_path)
+  File "/home/nilesh/Desktop/Apache-Airflow/venv/lib/python3.8/site-packages/airflow/utils/module_loading.py", line 32, in import_string
+    module = import_module(module_path)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/nilesh/Desktop/Apache-Airflow/venv/lib/python3.8/site-packages/airflow/cli/commands/celery_command.py", line 29, in <module>
+    from flower.command import FlowerCommand
+ImportError: cannot import name 'FlowerCommand' from 'flower.command' (/home/nilesh/Desktop/Apache-Airflow/venv/lib/python3.8/site-packages/flower/command.py)
+(venv) nilesh@nilesh:~$ airflow celery flower
+Traceback (most recent call last):
+  File "/home/nilesh/Desktop/Apache-Airflow/venv/bin/airflow", line 8, in <module>
+    sys.exit(main())
+  File "/home/nilesh/Desktop/Apache-Airflow/venv/lib/python3.8/site-packages/airflow/__main__.py", line 40, in main
+    args.func(args)
+  File "/home/nilesh/Desktop/Apache-Airflow/venv/lib/python3.8/site-packages/airflow/cli/cli_parser.py", line 47, in command
+    func = import_string(import_path)
+  File "/home/nilesh/Desktop/Apache-Airflow/venv/lib/python3.8/site-packages/airflow/utils/module_loading.py", line 32, in import_string
+    module = import_module(module_path)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/nilesh/Desktop/Apache-Airflow/venv/lib/python3.8/site-packages/airflow/cli/commands/celery_command.py", line 29, in <module>
+    from flower.command import FlowerCommand
+ImportError: cannot import name 'FlowerCommand' from 'flower.command' (/home/nilesh/Desktop/Apache-Airflow/venv/lib/python3.8/site-packages/flower/command.py)
+(venv) nilesh@nilesh:~$ pip install --upgrade apache-airflow-providers-celery==2.0.0
+Collecting apache-airflow-providers-celery==2.0.0
+  Downloading apache_airflow_providers_celery-2.0.0-py3-none-any.whl (11 kB)
+Requirement already satisfied, skipping upgrade: apache-airflow>=2.1.0 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow-providers-celery==2.0.0) (2.1.0)
+Collecting flower<1.0,>=0.7.3
+  Downloading flower-0.9.7-py2.py3-none-any.whl (456 kB)
+     |████████████████████████████████| 456 kB 1.1 MB/s 
+Collecting vine~=1.3
+  Downloading vine-1.3.0-py2.py3-none-any.whl (14 kB)
+Collecting celery~=4.4.2
+  Downloading celery-4.4.7-py2.py3-none-any.whl (427 kB)
+     |████████████████████████████████| 427 kB 27.3 MB/s 
+Requirement already satisfied, skipping upgrade: swagger-ui-bundle>=0.0.2 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (0.0.8)
+Requirement already satisfied, skipping upgrade: clickclick>=1.2 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (20.10.2)
+Requirement already satisfied, skipping upgrade: pygments<3.0,>=2.0.1 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (2.9.0)
+Requirement already satisfied, skipping upgrade: pyyaml>=5.1 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (5.4.1)
+Requirement already satisfied, skipping upgrade: pandas<2.0,>=0.17.1; python_version >= "3.7" in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.2.4)
+Requirement already satisfied, skipping upgrade: psutil<6.0.0,>=4.2.0 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (5.8.0)
+Requirement already satisfied, skipping upgrade: iso8601>=0.1.12 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (0.1.14)
+Requirement already satisfied, skipping upgrade: python3-openid~=3.2 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (3.2.0)
+Requirement already satisfied, skipping upgrade: gunicorn>=19.5.0 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (20.1.0)
+Requirement already satisfied, skipping upgrade: flask<2.0,>=1.1.0 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.1.2)
+Requirement already satisfied, skipping upgrade: python-dateutil<3,>=2.3 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (2.8.1)
+Requirement already satisfied, skipping upgrade: werkzeug>=1.0.1,~=1.0 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.0.1)
+Requirement already satisfied, skipping upgrade: alembic<2.0,>=1.2 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.6.2)
+Requirement already satisfied, skipping upgrade: httpx in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (0.23.0)
+Requirement already satisfied, skipping upgrade: pendulum~=2.0 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (2.1.2)
+Requirement already satisfied, skipping upgrade: marshmallow-oneofschema>=2.0.1 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (2.1.0)
+Requirement already satisfied, skipping upgrade: python-nvd3~=0.15.0 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (0.15.0)
+Requirement already satisfied, skipping upgrade: cattrs~=1.1; python_version > "3.6" in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.6.0)
+Requirement already satisfied, skipping upgrade: numpy; python_version >= "3.7" in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.20.3)
+Requirement already satisfied, skipping upgrade: apache-airflow-providers-ftp in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.1.0)
+Requirement already satisfied, skipping upgrade: croniter<1.1,>=0.3.17 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.0.13)
+Requirement already satisfied, skipping upgrade: flask-login<0.5,>=0.3 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (0.4.1)
+Requirement already satisfied, skipping upgrade: python-daemon>=2.2.4 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (2.3.0)
+Requirement already satisfied, skipping upgrade: sqlalchemy<1.4,>=1.3.18 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.3.24)
+Requirement already satisfied, skipping upgrade: graphviz>=0.12 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (0.16)
+Requirement already satisfied, skipping upgrade: tabulate<0.9,>=0.7.5 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (0.8.9)
+Requirement already satisfied, skipping upgrade: flask-appbuilder~=3.3 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (3.3.0)
+Requirement already satisfied, skipping upgrade: jinja2<2.12.0,>=2.10.1 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (2.11.3)
+Requirement already satisfied, skipping upgrade: lockfile>=0.12.2 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (0.12.2)
+Requirement already satisfied, skipping upgrade: lazy-object-proxy in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.4.3)
+Requirement already satisfied, skipping upgrade: setproctitle<2,>=1.1.8 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.2.2)
+Requirement already satisfied, skipping upgrade: apache-airflow-providers-imap in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.0.1)
+Requirement already satisfied, skipping upgrade: itsdangerous<2.0,>=1.1.0 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.1.0)
+Requirement already satisfied, skipping upgrade: argcomplete~=1.10 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.12.3)
+Requirement already satisfied, skipping upgrade: pyjwt<2 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.7.1)
+Requirement already satisfied, skipping upgrade: blinker in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.4)
+Requirement already satisfied, skipping upgrade: flask-wtf<0.15,>=0.14.3 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (0.14.3)
+Requirement already satisfied, skipping upgrade: openapi-spec-validator>=0.2.4 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (0.3.0)
+Requirement already satisfied, skipping upgrade: cryptography>=0.9.3 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (3.4.7)
+Requirement already satisfied, skipping upgrade: tenacity~=6.2.0 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (6.2.0)
+Requirement already satisfied, skipping upgrade: sqlalchemy-jsonfield~=1.0 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.0.0)
+Requirement already satisfied, skipping upgrade: apache-airflow-providers-sqlite in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.0.2)
+Requirement already satisfied, skipping upgrade: markdown<4.0,>=2.5.2 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (3.3.4)
+Requirement already satisfied, skipping upgrade: unicodecsv>=0.14.1 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (0.14.1)
+Requirement already satisfied, skipping upgrade: flask-caching<2.0.0,>=1.5.0 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.10.1)
+Requirement already satisfied, skipping upgrade: termcolor>=1.1.0 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.1.0)
+Requirement already satisfied, skipping upgrade: rich>=9.2.0 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (9.2.0)
+Requirement already satisfied, skipping upgrade: dill<0.4,>=0.2.2 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (0.3.1.1)
+Requirement already satisfied, skipping upgrade: inflection>=0.3.1 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (0.5.1)
+Requirement already satisfied, skipping upgrade: markupsafe<2.0,>=1.1.1 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.1.1)
+Requirement already satisfied, skipping upgrade: importlib-resources~=1.4 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.5.0)
+Requirement already satisfied, skipping upgrade: python-slugify<5.0,>=3.0.0 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (4.0.1)
+Requirement already satisfied, skipping upgrade: importlib-metadata~=1.7; python_version < "3.9" in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.7.0)
+Requirement already satisfied, skipping upgrade: jsonschema~=3.0 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (3.2.0)
+Requirement already satisfied, skipping upgrade: attrs<21.0,>=20.0 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (20.3.0)
+Requirement already satisfied, skipping upgrade: colorlog>=4.0.2 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (5.0.1)
+Requirement already satisfied, skipping upgrade: humanize in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from flower<1.0,>=0.7.3->apache-airflow-providers-celery==2.0.0) (4.1.0)
+Requirement already satisfied, skipping upgrade: tornado<7.0.0,>=5.0.0; python_version >= "3.5.2" in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from flower<1.0,>=0.7.3->apache-airflow-providers-celery==2.0.0) (6.1)
+Requirement already satisfied, skipping upgrade: pytz in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from flower<1.0,>=0.7.3->apache-airflow-providers-celery==2.0.0) (2021.1)
+Collecting prometheus-client==0.8.0
+  Downloading prometheus_client-0.8.0-py2.py3-none-any.whl (53 kB)
+     |████████████████████████████████| 53 kB 4.5 MB/s 
+Requirement already satisfied, skipping upgrade: billiard<4.0,>=3.6.3.0 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from celery~=4.4.2->apache-airflow-providers-celery==2.0.0) (3.6.4.0)
+Collecting kombu<4.7,>=4.6.10
+  Downloading kombu-4.6.11-py2.py3-none-any.whl (184 kB)
+     |████████████████████████████████| 184 kB 42.4 MB/s 
+Requirement already satisfied, skipping upgrade: click>=4.0 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from clickclick>=1.2->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (7.1.2)
+Requirement already satisfied, skipping upgrade: defusedxml in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from python3-openid~=3.2->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (0.7.1)
+Requirement already satisfied, skipping upgrade: setuptools>=3.0 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from gunicorn>=19.5.0->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (44.0.0)
+Requirement already satisfied, skipping upgrade: six>=1.5 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from python-dateutil<3,>=2.3->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.16.0)
+Requirement already satisfied, skipping upgrade: python-editor>=0.3 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from alembic<2.0,>=1.2->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.0.4)
+Requirement already satisfied, skipping upgrade: Mako in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from alembic<2.0,>=1.2->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.1.4)
+Requirement already satisfied, skipping upgrade: rfc3986[idna2008]<2,>=1.3 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from httpx->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.5.0)
+Requirement already satisfied, skipping upgrade: certifi in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from httpx->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (2020.12.5)
+Requirement already satisfied, skipping upgrade: httpcore<0.16.0,>=0.15.0 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from httpx->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (0.15.0)
+Requirement already satisfied, skipping upgrade: sniffio in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from httpx->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.2.0)
+Requirement already satisfied, skipping upgrade: pytzdata>=2020.1 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from pendulum~=2.0->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (2020.1)
+Requirement already satisfied, skipping upgrade: marshmallow<4.0.0,>=3.0.0rc6 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from marshmallow-oneofschema>=2.0.1->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (3.12.1)
+Requirement already satisfied, skipping upgrade: docutils in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from python-daemon>=2.2.4->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (0.17.1)
+Requirement already satisfied, skipping upgrade: Flask-SQLAlchemy<3,>=2.4 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (2.5.1)
+Requirement already satisfied, skipping upgrade: prison<1.0.0,>=0.1.3 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (0.1.3)
+Requirement already satisfied, skipping upgrade: apispec[yaml]<4,>=3.3 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (3.3.2)
+Requirement already satisfied, skipping upgrade: Flask-Babel<2,>=1 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.0.0)
+Requirement already satisfied, skipping upgrade: marshmallow-sqlalchemy<0.24.0,>=0.22.0 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (0.23.1)
+Requirement already satisfied, skipping upgrade: email-validator<2,>=1.0.5 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.1.2)
+Requirement already satisfied, skipping upgrade: marshmallow-enum<2,>=1.5.1 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.5.1)
+Requirement already satisfied, skipping upgrade: sqlalchemy-utils<1,>=0.32.21 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (0.37.2)
+Requirement already satisfied, skipping upgrade: colorama<1,>=0.3.9 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (0.4.4)
+Requirement already satisfied, skipping upgrade: Flask-JWT-Extended<4,>=3.18 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (3.25.1)
+Requirement already satisfied, skipping upgrade: Flask-OpenID<2,>=1.2.5 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from flask-appbuilder~=3.3->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.2.5)
+Requirement already satisfied, skipping upgrade: WTForms in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from flask-wtf<0.15,>=0.14.3->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (2.3.3)
+Requirement already satisfied, skipping upgrade: openapi-schema-validator in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from openapi-spec-validator>=0.2.4->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (0.1.5)
+Requirement already satisfied, skipping upgrade: cffi>=1.12 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from cryptography>=0.9.3->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.14.5)
+Requirement already satisfied, skipping upgrade: commonmark<0.10.0,>=0.9.0 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from rich>=9.2.0->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (0.9.1)
+Requirement already satisfied, skipping upgrade: typing-extensions<4.0.0,>=3.7.4 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from rich>=9.2.0->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (3.7.4.3)
+Requirement already satisfied, skipping upgrade: text-unidecode>=1.3 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from python-slugify<5.0,>=3.0.0->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.3)
+Requirement already satisfied, skipping upgrade: zipp>=0.5 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from importlib-metadata~=1.7; python_version < "3.9"->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (3.4.1)
+Requirement already satisfied, skipping upgrade: pyrsistent>=0.14.0 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from jsonschema~=3.0->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (0.17.3)
+Collecting amqp<2.7,>=2.6.0
+  Downloading amqp-2.6.1-py2.py3-none-any.whl (48 kB)
+     |████████████████████████████████| 48 kB 9.7 MB/s 
+Requirement already satisfied, skipping upgrade: idna; extra == "idna2008" in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from rfc3986[idna2008]<2,>=1.3->httpx->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (2.10)
+Requirement already satisfied, skipping upgrade: h11<0.13,>=0.11 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from httpcore<0.16.0,>=0.15.0->httpx->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (0.12.0)
+Requirement already satisfied, skipping upgrade: anyio==3.* in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from httpcore<0.16.0,>=0.15.0->httpx->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (3.6.1)
+Requirement already satisfied, skipping upgrade: Babel>=2.3 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from Flask-Babel<2,>=1->flask-appbuilder~=3.3->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (2.9.1)
+Requirement already satisfied, skipping upgrade: dnspython>=1.15.0 in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from email-validator<2,>=1.0.5->flask-appbuilder~=3.3->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (1.16.0)
+Requirement already satisfied, skipping upgrade: isodate in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from openapi-schema-validator->openapi-spec-validator>=0.2.4->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (0.6.0)
+Requirement already satisfied, skipping upgrade: pycparser in ./Desktop/Apache-Airflow/venv/lib/python3.8/site-packages (from cffi>=1.12->cryptography>=0.9.3->apache-airflow>=2.1.0->apache-airflow-providers-celery==2.0.0) (2.20)
+Installing collected packages: vine, amqp, kombu, celery, prometheus-client, flower, apache-airflow-providers-celery
+  Attempting uninstall: vine
+    Found existing installation: vine 5.0.0
+    Uninstalling vine-5.0.0:
+      Successfully uninstalled vine-5.0.0
+  Attempting uninstall: amqp
+    Found existing installation: amqp 5.1.1
+    Uninstalling amqp-5.1.1:
+      Successfully uninstalled amqp-5.1.1
+  Attempting uninstall: kombu
+    Found existing installation: kombu 5.2.4
+    Uninstalling kombu-5.2.4:
+      Successfully uninstalled kombu-5.2.4
+  Attempting uninstall: celery
+    Found existing installation: celery 5.2.7
+    Uninstalling celery-5.2.7:
+      Successfully uninstalled celery-5.2.7
+  Attempting uninstall: prometheus-client
+    Found existing installation: prometheus-client 0.14.1
+    Uninstalling prometheus-client-0.14.1:
+      Successfully uninstalled prometheus-client-0.14.1
+  Attempting uninstall: flower
+    Found existing installation: flower 1.0.0
+    Uninstalling flower-1.0.0:
+      Successfully uninstalled flower-1.0.0
+  Attempting uninstall: apache-airflow-providers-celery
+    Found existing installation: apache-airflow-providers-celery 2.1.4
+    Uninstalling apache-airflow-providers-celery-2.1.4:
+      Successfully uninstalled apache-airflow-providers-celery-2.1.4
+Successfully installed amqp-2.6.1 apache-airflow-providers-celery-2.0.0 celery-4.4.7 flower-0.9.7 kombu-4.6.11 prometheus-client-0.8.0 vine-1.3.0
+(venv) nilesh@nilesh:~$ airflow celery flower
+[2022-06-01 19:21:46,551] {command.py:135} INFO - Visit me at http://0.0.0.0:5555
+[2022-06-01 19:21:46,562] {command.py:142} INFO - Broker: redis://localhost:6379/0
+[2022-06-01 19:21:46,564] {command.py:143} INFO - Registered tasks: 
+['airflow.executors.celery_executor.execute_command',
+ 'celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap']
+[2022-06-01 19:21:46,581] {mixins.py:229} INFO - Connected to redis://localhost:6379/0
+[2022-06-01 19:21:47,700] {inspector.py:42} WARNING - Inspect method registered failed
+[2022-06-01 19:21:47,702] {inspector.py:42} WARNING - Inspect method conf failed
+[2022-06-01 19:21:47,703] {inspector.py:42} WARNING - Inspect method reserved failed
+[2022-06-01 19:21:47,703] {inspector.py:42} WARNING - Inspect method stats failed
+[2022-06-01 19:21:47,703] {inspector.py:42} WARNING - Inspect method active failed
+[2022-06-01 19:21:47,704] {inspector.py:42} WARNING - Inspect method scheduled failed
+[2022-06-01 19:21:47,704] {inspector.py:42} WARNING - Inspect method active_queues failed
+[2022-06-01 19:21:47,704] {inspector.py:42} WARNING - Inspect method revoked failed
