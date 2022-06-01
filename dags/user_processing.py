@@ -1,4 +1,3 @@
-from email.mime import base
 import json
 from multiprocessing.sharedctypes import Value
 from airflow.models import DAG
