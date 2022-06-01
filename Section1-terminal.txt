@@ -1,0 +1,537 @@
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ airflow webserver
+  ____________       _____________
+ ____    |__( )_________  __/__  /________      __
+____  /| |_  /__  ___/_  /_ __  /_  __ \_ | /| / /
+___  ___ |  / _  /   _  __/ _  / / /_/ /_ |/ |/ /
+ _/_/  |_/_/  /_/    /_/    /_/  \____/____/|__/
+[2022-06-01 11:02:06,744] {dagbag.py:487} INFO - Filling up the DagBag from /dev/null
+[2022-06-01 11:02:06,786] {manager.py:784} WARNING - No user yet created, use flask fab command to do it.
+Running the Gunicorn Server with:
+Workers: 4 sync
+Host: 0.0.0.0:8080
+Timeout: 120
+Logfiles: - -
+Access Logformat: 
+=================================================================            
+[2022-06-01 11:02:08 +0530] [378657] [INFO] Starting gunicorn 20.1.0
+[2022-06-01 11:02:08 +0530] [378657] [INFO] Listening at: http://0.0.0.0:8080 (378657)
+[2022-06-01 11:02:08 +0530] [378657] [INFO] Using worker: sync
+[2022-06-01 11:02:08 +0530] [378659] [INFO] Booting worker with pid: 378659
+[2022-06-01 11:02:08 +0530] [378660] [INFO] Booting worker with pid: 378660
+[2022-06-01 11:02:08 +0530] [378661] [INFO] Booting worker with pid: 378661
+[2022-06-01 11:02:08 +0530] [378669] [INFO] Booting worker with pid: 378669
+[2022-06-01 11:02:10,029] {manager.py:784} WARNING - No user yet created, use flask fab command to do it.
+[2022-06-01 11:02:10,229] {manager.py:784} WARNING - No user yet created, use flask fab command to do it.
+[2022-06-01 11:02:10,272] {manager.py:784} WARNING - No user yet created, use flask fab command to do it.
+[2022-06-01 11:02:10,507] {manager.py:784} WARNING - No user yet created, use flask fab command to do it.
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET / HTTP/1.1" 302 217 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /home HTTP/1.1" 302 305 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome HTTP/1.1" 200 17416 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /static/appbuilder/datepicker/bootstrap-datepicker.css HTTP/1.1" 200 0 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /static/appbuilder/css/bootstrap.min.css HTTP/1.1" 200 0 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /static/appbuilder/css/font-awesome.min.css HTTP/1.1" 200 0 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /static/appbuilder/select2/select2.css HTTP/1.1" 200 0 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /static/appbuilder/css/ab.css HTTP/1.1" 200 0 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /static/appbuilder/css/flags/flags16.css HTTP/1.1" 200 0 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /static/dist/airflowDefaultTheme.c19bf634a906347cf1a0.css HTTP/1.1" 200 0 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /static/dist/main.7c8f9340325b929761a0.css HTTP/1.1" 200 0 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /static/dist/materialIcons.4f9d67516ebe00c0bbb6.css HTTP/1.1" 200 0 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /static/dist/bootstrap-datetimepicker.min.css HTTP/1.1" 200 0 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /static/dist/loadingDots.4bccfb4c41b26eefcf1c.css HTTP/1.1" 200 0 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /static/dist/flash.d2167ed6d99f8d7833ef.css HTTP/1.1" 200 0 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /static/appbuilder/js/jquery-latest.js HTTP/1.1" 200 0 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /static/appbuilder/js/ab_filters.js HTTP/1.1" 200 0 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /static/appbuilder/js/ab_actions.js HTTP/1.1" 200 0 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /static/appbuilder/datepicker/bootstrap-datepicker.js HTTP/1.1" 200 0 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /static/appbuilder/js/bootstrap.min.js HTTP/1.1" 200 0 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /static/appbuilder/select2/select2.js HTTP/1.1" 200 0 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /static/appbuilder/js/ab.js HTTP/1.1" 200 0 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /static/dist/moment.1a09402fe354380806b9.js HTTP/1.1" 200 0 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /static/dist/main.7c8f9340325b929761a0.js HTTP/1.1" 200 0 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /static/dist/bootstrap-datetimepicker.min.js HTTP/1.1" 200 0 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /static/dist/bootstrap3-typeahead.min.js HTTP/1.1" 200 0 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /static/appbuilder/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 0 "http://localhost:8080/static/appbuilder/css/font-awesome.min.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:02:22 +0530] "GET /static/pin_32.png HTTP/1.1" 200 0 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+^C[2022-06-01 11:03:12 +0530] [378657] [INFO] Handling signal: int
+[2022-06-01 11:03:12,778] {webserver_command.py:431} INFO - Received signal: 2. Closing gunicorn.
+[2022-06-01 11:03:12 +0530] [378659] [INFO] Worker exiting (pid: 378659)
+[2022-06-01 11:03:12 +0530] [378669] [INFO] Worker exiting (pid: 378669)
+[2022-06-01 11:03:12 +0530] [378660] [INFO] Worker exiting (pid: 378660)
+[2022-06-01 11:03:12 +0530] [378661] [INFO] Worker exiting (pid: 378661)
+[2022-06-01 11:03:13 +0530] [378657] [INFO] Shutting down: Master
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ airflow -h
+usage: airflow [-h] GROUP_OR_COMMAND ...
+
+positional arguments:
+  GROUP_OR_COMMAND
+
+    Groups:
+      celery         Celery components
+      config         View configuration
+      connections    Manage connections
+      dags           Manage DAGs
+      db             Database operations
+      jobs           Manage jobs
+      kubernetes     Tools to help run the KubernetesExecutor
+      pools          Manage pools
+      providers      Display providers
+      roles          Manage roles
+      tasks          Manage tasks
+      users          Manage users
+      variables      Manage variables
+
+    Commands:
+      cheat-sheet    Display cheat sheet
+      info           Show information about current Airflow and environment
+      kerberos       Start a kerberos ticket renewer
+      plugins        Dump information about loaded plugins
+      rotate-fernet-key
+                     Rotate encrypted connection credentials and variables
+      scheduler      Start a scheduler instance
+      sync-perm      Update permissions for existing roles and optionally DAGs
+      version        Show the version
+      webserver      Start a Airflow webserver instance
+
+optional arguments:
+  -h, --help         show this help message and exit
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ airflow users -h
+usage: airflow users [-h] COMMAND ...
+
+Manage users
+
+positional arguments:
+  COMMAND
+    add-role   Add role to a user
+    create     Create a user
+    delete     Delete a user
+    export     Export all users
+    import     Import users
+    list       List users
+    remove-role
+               Remove role from a user
+
+optional arguments:
+  -h, --help   show this help message and exit
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ airflow users create -h
+usage: airflow users create [-h] -e EMAIL -f FIRSTNAME -l LASTNAME [-p PASSWORD] -r ROLE [--use-random-password] -u USERNAME
+
+Create a user
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -e EMAIL, --email EMAIL
+                        Email of the user
+  -f FIRSTNAME, --firstname FIRSTNAME
+                        First name of the user
+  -l LASTNAME, --lastname LASTNAME
+                        Last name of the user
+  -p PASSWORD, --password PASSWORD
+                        Password of the user, required to create a user without --use-random-password
+  -r ROLE, --role ROLE  Role of the user. Existing roles include Admin, User, Op, Viewer, and Public
+  --use-random-password
+                        Do not prompt for password. Use random string instead. Required to create a user without --password 
+  -u USERNAME, --username USERNAME
+                        Username of the user
+
+examples:
+To create an user with "Admin" role and username equals to "admin", run:
+
+    $ airflow users create \
+          --username admin \
+          --firstname FIRST_NAME \
+          --lastname LAST_NAME \
+          --role Admin \
+          --email admin@example.org
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ airflow users create -u admin -p admin -f Nilesh -l Kala -r Admin -e nilesh.kala@konverge.ai
+[2022-06-01 11:04:34,566] {manager.py:784} WARNING - No user yet created, use flask fab command to do it.
+Admin user admin created
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ airflow scheduler
+  ____________       _____________
+ ____    |__( )_________  __/__  /________      __
+____  /| |_  /__  ___/_  /_ __  /_  __ \_ | /| / /
+___  ___ |  / _  /   _  __/ _  / / /_/ /_ |/ |/ /
+ _/_/  |_/_/  /_/    /_/    /_/  \____/____/|__/
+Starting flask
+ * Serving Flask app "airflow.utils.serve_logs" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+[2022-06-01 11:07:03,437] {_internal.py:113} INFO -  * Running on http://0.0.0.0:8793/ (Press CTRL+C to quit)
+[2022-06-01 11:07:03,444] {scheduler_job.py:1253} INFO - Starting the scheduler
+[2022-06-01 11:07:03,444] {scheduler_job.py:1258} INFO - Processing each file at most -1 times
+[2022-06-01 11:07:03,449] {dag_processing.py:254} INFO - Launched DagFileProcessorManager with pid: 380031
+[2022-06-01 11:07:03,451] {scheduler_job.py:1822} INFO - Resetting orphaned tasks for active dag runs
+[2022-06-01 11:07:03,458] {settings.py:52} INFO - Configured default timezone Timezone('UTC')
+[2022-06-01 11:07:03,482] {dag_processing.py:529} WARNING - Because we cannot use more than 1 thread (parsing_processes = 2 ) when using sqlite. So we set parallelism to 1.
+
+------------------------------------------------------------------------------
+
+nilesh@nilesh:~/Desktop/Apache-Airflow$ source venv/bin/activate
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ airflow webserver
+  ____________       _____________
+ ____    |__( )_________  __/__  /________      __
+____  /| |_  /__  ___/_  /_ __  /_  __ \_ | /| / /
+___  ___ |  / _  /   _  __/ _  / / /_/ /_ |/ |/ /
+ _/_/  |_/_/  /_/    /_/    /_/  \____/____/|__/
+[2022-06-01 11:05:29,064] {dagbag.py:487} INFO - Filling up the DagBag from /dev/null
+Running the Gunicorn Server with:
+Workers: 4 sync
+Host: 0.0.0.0:8080
+Timeout: 120
+Logfiles: - -
+Access Logformat: 
+=================================================================            
+[2022-06-01 11:05:30 +0530] [379659] [INFO] Starting gunicorn 20.1.0
+[2022-06-01 11:05:30 +0530] [379659] [INFO] Listening at: http://0.0.0.0:8080 (379659)
+[2022-06-01 11:05:30 +0530] [379659] [INFO] Using worker: sync
+[2022-06-01 11:05:30 +0530] [379677] [INFO] Booting worker with pid: 379677
+[2022-06-01 11:05:30 +0530] [379678] [INFO] Booting worker with pid: 379678
+[2022-06-01 11:05:30 +0530] [379679] [INFO] Booting worker with pid: 379679
+[2022-06-01 11:05:30 +0530] [379680] [INFO] Booting worker with pid: 379680
+127.0.0.1 - - [01/Jun/2022:11:05:34 +0530] "POST /login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome HTTP/1.1" 302 209 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:34 +0530] "GET / HTTP/1.1" 302 217 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:34 +0530] "GET /home HTTP/1.1" 200 266358 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/dist/switch.bd0a985109a4c7b474f3.css HTTP/1.1" 200 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/appbuilder/css/bootstrap.min.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/dist/dags.8509241b84ead4376a22.css HTTP/1.1" 200 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/appbuilder/css/font-awesome.min.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/appbuilder/datepicker/bootstrap-datepicker.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/appbuilder/select2/select2.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/appbuilder/css/flags/flags16.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/dist/materialIcons.4f9d67516ebe00c0bbb6.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/appbuilder/css/ab.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/dist/airflowDefaultTheme.c19bf634a906347cf1a0.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/dist/main.7c8f9340325b929761a0.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/dist/loadingDots.4bccfb4c41b26eefcf1c.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/dist/bootstrap-datetimepicker.min.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/dist/flash.d2167ed6d99f8d7833ef.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/appbuilder/js/jquery-latest.js HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/appbuilder/js/ab_actions.js HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/dist/d3.min.js HTTP/1.1" 200 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/appbuilder/js/ab_filters.js HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/appbuilder/js/bootstrap.min.js HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/dist/dags.8509241b84ead4376a22.js HTTP/1.1" 200 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/appbuilder/select2/select2.js HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/appbuilder/js/ab.js HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/appbuilder/datepicker/bootstrap-datepicker.js HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/dist/moment.1a09402fe354380806b9.js HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/dist/main.7c8f9340325b929761a0.js HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/dist/bootstrap-datetimepicker.min.js HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "GET /static/dist/bootstrap3-typeahead.min.js HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "POST /task_stats HTTP/1.1" 200 32027 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "POST /blocked HTTP/1.1" 200 2 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "POST /last_dagruns HTTP/1.1" 200 2 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:35 +0530] "POST /dag_stats HTTP/1.1" 200 8828 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:05:36 +0530] "GET /static/pin_32.png HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:07:11 +0530] "GET /home HTTP/1.1" 200 266154 "http://localhost:8080/login/?next=http%3A%2F%2Flocalhost%3A8080%2Fhome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:07:11 +0530] "GET /static/appbuilder/css/font-awesome.min.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:07:11 +0530] "GET /static/appbuilder/css/bootstrap.min.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:07:11 +0530] "GET /static/appbuilder/datepicker/bootstrap-datepicker.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:07:11 +0530] "GET /static/appbuilder/select2/select2.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:07:11 +0530] "GET /static/appbuilder/css/flags/flags16.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:07:11 +0530] "GET /static/appbuilder/css/ab.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:07:11 +0530] "GET /static/dist/airflowDefaultTheme.c19bf634a906347cf1a0.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:07:11 +0530] "GET /static/dist/materialIcons.4f9d67516ebe00c0bbb6.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:07:11 +0530] "GET /static/dist/main.7c8f9340325b929761a0.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:07:11 +0530] "GET /static/dist/loadingDots.4bccfb4c41b26eefcf1c.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:07:11 +0530] "GET /static/dist/bootstrap-datetimepicker.min.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:07:11 +0530] "GET /static/dist/switch.bd0a985109a4c7b474f3.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:07:11 +0530] "GET /static/dist/dags.8509241b84ead4376a22.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:07:11 +0530] "GET /static/dist/flash.d2167ed6d99f8d7833ef.css HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:07:11 +0530] "POST /last_dagruns HTTP/1.1" 200 2 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:07:11 +0530] "POST /task_stats HTTP/1.1" 200 32027 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:07:11 +0530] "POST /dag_stats HTTP/1.1" 200 8828 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:07:11 +0530] "POST /blocked HTTP/1.1" 200 2 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+127.0.0.1 - - [01/Jun/2022:11:07:12 +0530] "GET /static/pin_32.png HTTP/1.1" 304 0 "http://localhost:8080/home" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+[2022-06-01 11:07:23 +0530] [379659] [INFO] Handling signal: winch
+
+---------------------------------------------------------------------
+
+nilesh@nilesh:~/Desktop/Apache-Airflow$ source venv/bin/activate
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ airflowdags list
+airflowdags: command not found
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ airflow dags list
+dag_id            | filepath        | owner   | paused
+==================+=================+=========+=======
+example_bash_oper | /home/nilesh/De | airflow | True  
+ator              | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_bash_op |         |       
+                  | erator.py       |         |       
+example_branch_da | /home/nilesh/De | airflow | True  
+tetime_operator_2 | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_branch_ |         |       
+                  | datetime_operat |         |       
+                  | or.py           |         |       
+example_branch_do | /home/nilesh/De | airflow | True  
+p_operator_v3     | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_branch_ |         |       
+                  | python_dop_oper |         |       
+                  | ator_3.py       |         |       
+example_branch_la | /home/nilesh/De | airflow | True  
+bels              | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_branch_ |         |       
+                  | labels.py       |         |       
+example_branch_op | /home/nilesh/De | airflow | True  
+erator            | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_branch_ |         |       
+                  | operator.py     |         |       
+example_complex   | /home/nilesh/De | airflow | True  
+                  | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_complex |         |       
+                  | .py             |         |       
+example_dag_decor | /home/nilesh/De | airflow | True  
+ator              | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_dag_dec |         |       
+                  | orator.py       |         |       
+example_external_ | /home/nilesh/De | airflow | True  
+task_marker_child | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_externa |         |       
+                  | l_task_marker_d |         |       
+                  | ag.py           |         |       
+example_external_ | /home/nilesh/De | airflow | True  
+task_marker_paren | sktop/Apache-Ai |         |       
+t                 | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_externa |         |       
+                  | l_task_marker_d |         |       
+                  | ag.py           |         |       
+example_kubernete | /home/nilesh/De | airflow | True  
+s_executor        | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_kuberne |         |       
+                  | tes_executor.py |         |       
+example_nested_br | /home/nilesh/De | airflow | True  
+anch_dag          | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_nested_ |         |       
+                  | branch_dag.py   |         |       
+example_passing_p | /home/nilesh/De | airflow | True  
+arams_via_test_co | sktop/Apache-Ai |         |       
+mmand             | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_passing |         |       
+                  | _params_via_tes |         |       
+                  | t_command.py    |         |       
+example_python_op | /home/nilesh/De | airflow | True  
+erator            | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_python_ |         |       
+                  | operator.py     |         |       
+example_short_cir | /home/nilesh/De | airflow | True  
+cuit_operator     | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_short_c |         |       
+                  | ircuit_operator |         |       
+                  | .py             |         |       
+example_skip_dag  | /home/nilesh/De | airflow | True  
+                  | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_skip_da |         |       
+                  | g.py            |         |       
+example_subdag_op | /home/nilesh/De | airflow | True  
+erator            | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_subdag_ |         |       
+                  | operator.py     |         |       
+example_subdag_op | /home/nilesh/De | airflow | True  
+erator.section-1  | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_subdag_ |         |       
+                  | operator.py     |         |       
+example_subdag_op | /home/nilesh/De | airflow | True  
+erator.section-2  | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_subdag_ |         |       
+                  | operator.py     |         |       
+example_task_grou | /home/nilesh/De | airflow | True  
+p                 | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_task_gr |         |       
+                  | oup.py          |         |       
+example_task_grou | /home/nilesh/De | airflow | True  
+p_decorator       | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_task_gr |         |       
+                  | oup_decorator.p |         |       
+                  | y               |         |       
+example_trigger_c | /home/nilesh/De | airflow | True  
+ontroller_dag     | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_trigger |         |       
+                  | _controller_dag |         |       
+                  | .py             |         |       
+example_trigger_t | /home/nilesh/De | airflow | True  
+arget_dag         | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_trigger |         |       
+                  | _target_dag.py  |         |       
+example_weekday_b | /home/nilesh/De | airflow | True  
+ranch_operator    | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_branch_ |         |       
+                  | day_of_week_ope |         |       
+                  | rator.py        |         |       
+example_xcom      | /home/nilesh/De | airflow | True  
+                  | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_xcom.py |         |       
+example_xcom_args | /home/nilesh/De | airflow | True  
+                  | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_xcomarg |         |       
+                  | s.py            |         |       
+example_xcom_args | /home/nilesh/De | airflow | True  
+_with_operators   | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_xcomarg |         |       
+                  | s.py            |         |       
+latest_only       | /home/nilesh/De | airflow | True  
+                  | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_latest_ |         |       
+                  | only.py         |         |       
+latest_only_with_ | /home/nilesh/De | airflow | True  
+trigger           | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | example_latest_ |         |       
+                  | only_with_trigg |         |       
+                  | er.py           |         |       
+test_utils        | /home/nilesh/De | airflow | True  
+                  | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | test_utils.py   |         |       
+tutorial          | /home/nilesh/De | airflow | True  
+                  | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | tutorial.py     |         |       
+tutorial_etl_dag  | /home/nilesh/De | airflow | True  
+                  | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | tutorial_etl_da |         |       
+                  | g.py            |         |       
+tutorial_taskflow | /home/nilesh/De | airflow | True  
+_api_etl          | sktop/Apache-Ai |         |       
+                  | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | tutorial_taskfl |         |       
+                  | ow_api_etl.py   |         |       
+tutorial_taskflow | /home/nilesh/De | airflow | True  
+_api_etl_virtuale | sktop/Apache-Ai |         |       
+nv                | rflow/venv/lib/ |         |       
+                  | python3.8/site- |         |       
+                  | packages/airflo |         |       
+                  | w/example_dags/ |         |       
+                  | tutorial_taskfl |         |       
+                  | ow_api_etl_virt |         |       
+                  | ualenv.py       |         |       
+                                                      
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ airflow tasks list tutorial 
+print_date
+sleep
+templated
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ airflow dags trigger -e 2022-06-01 tutorial 
+[2022-06-01 11:09:16,032] {__init__.py:38} INFO - Loaded API auth backend: <module 'airflow.api.auth.backend.deny_all' from '/home/nilesh/Desktop/Apache-Airflow/venv/lib/python3.8/site-packages/airflow/api/auth/backend/deny_all.py'>
+Created <DagRun tutorial @ 2022-06-01T00:00:00+00:00: manual__2022-06-01T00:00:00+00:00, externally triggered: True>
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ 
