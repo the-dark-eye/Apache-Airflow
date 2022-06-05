@@ -1,0 +1,218 @@
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ sudo systemctl start elasticsearch
+[sudo] password for nilesh: 
+Job for elasticsearch.service failed because a fatal signal was delivered to the control process.
+See "systemctl status elasticsearch.service" and "journalctl -xe" for details.
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ sudo nano /etc/elasticsearch/elasticsearch.yml
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ journalctl -xe
+-- 
+-- A start job for unit elasticsearch.service has finished with a failure.
+-- 
+-- The job identifier is 22462 and the job result is failed.
+Jun 02 03:04:00 nilesh sudo[692165]: pam_unix(sudo:session): session closed for user root
+Jun 02 03:04:06 nilesh gnome-shell[24578]: Fontconfig error: Cannot load default config file: No such file: (null)
+Jun 02 03:04:07 nilesh gnome-shell[24578]: [24579:24579:0602/030407.932343:ERROR:CONSOLE(1)] "[Shields]: Can't requ>
+Jun 02 03:04:07 nilesh gnome-shell[24578]: [24579:24579:0602/030407.938451:ERROR:CONSOLE(1)] "[Shields]: Can't requ>
+Jun 02 03:04:27 nilesh gnome-shell[24578]: Fontconfig error: Cannot load default config file: No such file: (null)
+Jun 02 03:04:37 nilesh sudo[692551]:   nilesh : TTY=pts/3 ; PWD=/home/nilesh/Desktop/Apache-Airflow ; USER=root ; C>
+Jun 02 03:04:37 nilesh sudo[692551]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Jun 02 03:04:48 nilesh gnome-shell[24578]: Fontconfig error: Cannot load default config file: No such file: (null)
+Jun 02 03:05:01 nilesh CRON[692702]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 02 03:05:01 nilesh CRON[692703]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 02 03:05:01 nilesh CRON[692702]: pam_unix(cron:session): session closed for user root
+Jun 02 03:05:10 nilesh gnome-shell[24578]: Fontconfig error: Cannot load default config file: No such file: (null)
+Jun 02 03:05:37 nilesh gnome-shell[24578]: Fontconfig error: Cannot load default config file: No such file: (null)
+Jun 02 03:05:47 nilesh sudo[692551]: pam_unix(sudo:session): session closed for user root
+
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ export FONTCONFIG_PATH=/etc/fonts
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ sudo systemctl start elasticsearch
+Job for elasticsearch.service failed because a fatal signal was delivered to the control process.
+See "systemctl status elasticsearch.service" and "journalctl -xe" for details.
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ journalctl -xe
+-- 
+-- The process' exit code is 'killed' and its exit status is 9.
+Jun 02 03:08:09 nilesh systemd[1]: elasticsearch.service: Failed with result 'signal'.
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit elasticsearch.service has entered the 'failed' state with result 'signal'.
+Jun 02 03:08:09 nilesh systemd[1]: Failed to start Elasticsearch.
+-- Subject: A start job for unit elasticsearch.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit elasticsearch.service has finished with a failure.
+-- 
+-- The job identifier is 22534 and the job result is failed.
+Jun 02 03:08:09 nilesh sudo[693495]: pam_unix(sudo:session): session closed for user root
+Jun 02 03:08:12 nilesh gnome-shell[24578]: Fontconfig error: Cannot load default config file: No such file: (null)
+
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ systemctl status elasticsearch.service
+● elasticsearch.service - Elasticsearch
+     Loaded: loaded (/lib/systemd/system/elasticsearch.service; disabled; vendor preset: enabled)
+     Active: failed (Result: signal) since Thu 2022-06-02 03:08:09 IST; 1min 38s ago
+       Docs: https://www.elastic.co
+    Process: 693498 ExecStart=/usr/share/elasticsearch/bin/systemd-entrypoint -p ${PID_DIR}/elasticsearch.pid --qui>
+   Main PID: 693498 (code=killed, signal=KILL)
+
+Jun 02 03:08:07 nilesh systemd[1]: Starting Elasticsearch...
+Jun 02 03:08:09 nilesh systemd[1]: elasticsearch.service: Main process exited, code=killed, status=9/KILL
+Jun 02 03:08:09 nilesh systemd[1]: elasticsearch.service: Failed with result 'signal'.
+Jun 02 03:08:09 nilesh systemd[1]: Failed to start Elasticsearch.
+
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ systemctl status elasticsearch.service
+● elasticsearch.service - Elasticsearch
+     Loaded: loaded (/lib/systemd/system/elasticsearch.service; disabled; vendor preset: enabled)
+     Active: failed (Result: signal) since Thu 2022-06-02 03:08:09 IST; 5min ago
+       Docs: https://www.elastic.co
+    Process: 693498 ExecStart=/usr/share/elasticsearch/bin/systemd-entrypoint -p ${PID_DIR}/elasticsearch.pid --qui>
+   Main PID: 693498 (code=killed, signal=KILL)
+
+Jun 02 03:08:07 nilesh systemd[1]: Starting Elasticsearch...
+Jun 02 03:08:09 nilesh systemd[1]: elasticsearch.service: Main process exited, code=killed, status=9/KILL
+Jun 02 03:08:09 nilesh systemd[1]: elasticsearch.service: Failed with result 'signal'.
+Jun 02 03:08:09 nilesh systemd[1]: Failed to start Elasticsearch.
+...skipping...
+● elasticsearch.service - Elasticsearch
+     Loaded: loaded (/lib/systemd/system/elasticsearch.service; disabled; vendor preset: enabled)
+     Active: failed (Result: signal) since Thu 2022-06-02 03:08:09 IST; 5min ago
+       Docs: https://www.elastic.co
+    Process: 693498 ExecStart=/usr/share/elasticsearch/bin/systemd-entrypoint -p ${PID_DIR}/elasticsearch.pid --qui>
+   Main PID: 693498 (code=killed, signal=KILL)
+
+Jun 02 03:08:07 nilesh systemd[1]: Starting Elasticsearch...
+Jun 02 03:08:09 nilesh systemd[1]: elasticsearch.service: Main process exited, code=killed, status=9/KILL
+Jun 02 03:08:09 nilesh systemd[1]: elasticsearch.service: Failed with result 'signal'.
+Jun 02 03:08:09 nilesh systemd[1]: Failed to start Elasticsearch.
+~
+~
+~
+~
+~
+~
+~
+
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ sudo systemctl start elasticsearch
+Job for elasticsearch.service failed because a fatal signal was delivered to the control process.
+See "systemctl status elasticsearch.service" and "journalctl -xe" for details.
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ systemctl status elasticsearch.service
+● elasticsearch.service - Elasticsearch
+     Loaded: loaded (/lib/systemd/system/elasticsearch.service; disabled; vendor preset: enabled)
+     Active: failed (Result: signal) since Thu 2022-06-02 03:13:59 IST; 6s ago
+       Docs: https://www.elastic.co
+    Process: 694725 ExecStart=/usr/share/elasticsearch/bin/systemd-entrypoint -p ${PID_DIR}/elasticsearch.pid --qui>
+   Main PID: 694725 (code=killed, signal=KILL)
+
+Jun 02 03:13:57 nilesh systemd[1]: Starting Elasticsearch...
+Jun 02 03:13:59 nilesh systemd[1]: elasticsearch.service: Main process exited, code=killed, status=9/KILL
+Jun 02 03:13:59 nilesh systemd[1]: elasticsearch.service: Failed with result 'signal'.
+Jun 02 03:13:59 nilesh systemd[1]: Failed to start Elasticsearch.
+...skipping...
+● elasticsearch.service - Elasticsearch
+     Loaded: loaded (/lib/systemd/system/elasticsearch.service; disabled; vendor preset: enabled)
+     Active: failed (Result: signal) since Thu 2022-06-02 03:13:59 IST; 6s ago
+       Docs: https://www.elastic.co
+    Process: 694725 ExecStart=/usr/share/elasticsearch/bin/systemd-entrypoint -p ${PID_DIR}/elasticsearch.pid --qui>
+   Main PID: 694725 (code=killed, signal=KILL)
+
+Jun 02 03:13:57 nilesh systemd[1]: Starting Elasticsearch...
+Jun 02 03:13:59 nilesh systemd[1]: elasticsearch.service: Main process exited, code=killed, status=9/KILL
+Jun 02 03:13:59 nilesh systemd[1]: elasticsearch.service: Failed with result 'signal'.
+Jun 02 03:13:59 nilesh systemd[1]: Failed to start Elasticsearch.
+~
+~
+~
+~
+~
+~
+~
+...skipping...
+● elasticsearch.service - Elasticsearch
+     Loaded: loaded (/lib/systemd/system/elasticsearch.service; disabled; vendor preset: enabled)
+     Active: failed (Result: signal) since Thu 2022-06-02 03:13:59 IST; 6s ago
+       Docs: https://www.elastic.co
+    Process: 694725 ExecStart=/usr/share/elasticsearch/bin/systemd-entrypoint -p ${PID_DIR}/elasticsearch.pid --qui>
+   Main PID: 694725 (code=killed, signal=KILL)
+
+Jun 02 03:13:57 nilesh systemd[1]: Starting Elasticsearch...
+Jun 02 03:13:59 nilesh systemd[1]: elasticsearch.service: Main process exited, code=killed, status=9/KILL
+Jun 02 03:13:59 nilesh systemd[1]: elasticsearch.service: Failed with result 'signal'.
+Jun 02 03:13:59 nilesh systemd[1]: Failed to start Elasticsearch.
+~
+~
+~
+~
+~
+~
+~
+
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ journalctl -xe
+-- The process' exit code is 'killed' and its exit status is 9.
+Jun 02 03:13:59 nilesh systemd[1]: elasticsearch.service: Failed with result 'signal'.
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit elasticsearch.service has entered the 'failed' state with result 'signal'.
+Jun 02 03:13:59 nilesh systemd[1]: Failed to start Elasticsearch.
+-- Subject: A start job for unit elasticsearch.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit elasticsearch.service has finished with a failure.
+-- 
+-- The job identifier is 22742 and the job result is failed.
+Jun 02 03:13:59 nilesh sudo[694722]: pam_unix(sudo:session): session closed for user root
+Jun 02 03:14:11 nilesh gnome-shell[24578]: Fontconfig error: Cannot load default config file: No such file: (null)
+Jun 02 03:14:32 nilesh gnome-shell[24578]: Fontconfig error: Cannot load default config file: No such file: (null)
+
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ sudo su
+root@nilesh:/home/nilesh/Desktop/Apache-Airflow# export FONTCONFIG_PATH=/etc/fonts
+root@nilesh:/home/nilesh/Desktop/Apache-Airflow# sudo systemctl start elasticsearch
+Job for elasticsearch.service failed because a fatal signal was delivered to the control process.
+See "systemctl status elasticsearch.service" and "journalctl -xe" for details.
+root@nilesh:/home/nilesh/Desktop/Apache-Airflow# 
+
+---------------------------------------------------------------------
+
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ sudo systemctl show elasticsearch | grep ^Timeout
+[sudo] password for nilesh: 
+TimeoutStartUSec=1min 15s
+TimeoutStopUSec=infinity
+TimeoutAbortUSec=infinity
+TimeoutCleanUSec=infinity
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ sudo mkdir /etc/systemd/system/elasticsearch.service.d
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ echo -e "[Service]\nTimeoutStartSec=180" | sudo tee
+[Service]
+TimeoutStartSec=180
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ /etc/systemd/system/elasticsearch.service.d/startup-timeout.conf
+bash: /etc/systemd/system/elasticsearch.service.d/startup-timeout.conf: No such file or directory
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ echo -e "[Service]\nTimeoutStartSec=180" | sudo tee /etc/systemd/system/elasticsearch.service.d/startup-timeout.conf
+[Service]
+TimeoutStartSec=180
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ sudo systemctl daemon-reload
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ 
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ sudo systemctl show elasticsearch | grep ^Timeout
+TimeoutStartUSec=3min
+TimeoutStopUSec=infinity
+TimeoutAbortUSec=infinity
+TimeoutCleanUSec=infinity
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ sudo systemctl start elasticsearch
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ sudo systemctl status elasticsearch
+● elasticsearch.service - Elasticsearch
+     Loaded: loaded (/lib/systemd/system/elasticsearch.service; disabled; vendor preset: enabled)
+    Drop-In: /etc/systemd/system/elasticsearch.service.d
+             └─startup-timeout.conf
+     Active: active (running) since Sun 2022-06-05 18:34:52 IST; 7s ago
+       Docs: https://www.elastic.co
+   Main PID: 197281 (java)
+      Tasks: 97 (limit: 9215)
+     Memory: 3.7G
+     CGroup: /system.slice/elasticsearch.service
+             ├─197281 /usr/share/elasticsearch/jdk/bin/java -Xshare:auto -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.>
+             └─197499 /usr/share/elasticsearch/modules/x-pack-ml/platform/linux-x86_64/bin/controller
+
+Jun 05 18:34:39 nilesh systemd[1]: Starting Elasticsearch...
+Jun 05 18:34:52 nilesh systemd[1]: Started Elasticsearch.
+
+(venv) nilesh@nilesh:~/Desktop/Apache-Airflow$ 
